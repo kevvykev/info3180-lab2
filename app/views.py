@@ -9,6 +9,7 @@ import os
 from app import app
 from flask import render_template, request, redirect, url_for
 import time
+app = Flask(__name__)
 
 
 ###
