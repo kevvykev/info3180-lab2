@@ -9,7 +9,7 @@ import os
 from app import app
 from flask import render_template, request, redirect, url_for
 import time
-app = Flask(__name__)
+
 
 
 ###
@@ -67,4 +67,4 @@ def timeinfo():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=int(os.getenv("PORT")))
+  app.run(debug=True, host=os.getenv("IP", '0.0.0.0'),port=int(os.getenv("PORT", 8080) ))
